@@ -9,6 +9,7 @@ class CardItem extends Component {
     if (this.props.button) {
       return (
         <TouchableOpacity
+          accessible={false}
           ref={c => (this._root = c)}
           {...this.props}
           activeOpacity={this.props.button ? 0.2 : 1}

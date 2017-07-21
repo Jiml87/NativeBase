@@ -69,6 +69,7 @@ visible:this.state.modalVisible,
 onRequestClose:function onRequestClose(){return _this2.setState({modalVisible:false});},__source:{fileName:_jsxFileName,lineNumber:65}},
 
 _react2.default.createElement(_reactNative.TouchableOpacity,{
+accessible:false,
 activeOpacity:1,
 onPress:function onPress(){return _this2.setState({modalVisible:false});},
 style:{
@@ -78,15 +79,16 @@ justifyContent:"flex-end"},__source:{fileName:_jsxFileName,lineNumber:71}},
 
 
 _react2.default.createElement(_reactNative.TouchableOpacity,{
+accessible:false,
 activeOpacity:1,
 style:{
 backgroundColor:"#fff",
 height:this.state.length*80,
 padding:15,
-elevation:4},__source:{fileName:_jsxFileName,lineNumber:80}},
+elevation:4},__source:{fileName:_jsxFileName,lineNumber:81}},
 
 
-_react2.default.createElement(_Text.Text,{style:{color:"#757575"},__source:{fileName:_jsxFileName,lineNumber:89}},
+_react2.default.createElement(_Text.Text,{style:{color:"#757575"},__source:{fileName:_jsxFileName,lineNumber:91}},
 this.state.title),
 
 _react2.default.createElement(_List.List,{
@@ -99,9 +101,9 @@ onPress:function onPress(){
 _this2.state.callback(id);
 _this2.setState({modalVisible:false});
 },
-style:{borderColor:"transparent"},__source:{fileName:_jsxFileName,lineNumber:97}},
+style:{borderColor:"transparent"},__source:{fileName:_jsxFileName,lineNumber:99}},
 
-_react2.default.createElement(_Text.Text,{__source:{fileName:_jsxFileName,lineNumber:104}},
+_react2.default.createElement(_Text.Text,{__source:{fileName:_jsxFileName,lineNumber:106}},
 data)):
 
 
@@ -111,24 +113,24 @@ _this2.state.callback(id);
 _this2.setState({modalVisible:false});
 },
 style:{borderColor:"transparent"},
-icon:true,__source:{fileName:_jsxFileName,lineNumber:108}},
+icon:true,__source:{fileName:_jsxFileName,lineNumber:110}},
 
-_react2.default.createElement(_Left.Left,{__source:{fileName:_jsxFileName,lineNumber:116}},
+_react2.default.createElement(_Left.Left,{__source:{fileName:_jsxFileName,lineNumber:118}},
 _react2.default.createElement(_Icon.Icon,{
 name:data.icon,
 style:{
-color:data.iconColor?data.iconColor:undefined},__source:{fileName:_jsxFileName,lineNumber:117}})),
+color:data.iconColor?data.iconColor:undefined},__source:{fileName:_jsxFileName,lineNumber:119}})),
 
 
 
-_react2.default.createElement(_Body.Body,{style:{borderColor:"transparent"},__source:{fileName:_jsxFileName,lineNumber:124}},
-_react2.default.createElement(_Text.Text,{__source:{fileName:_jsxFileName,lineNumber:125}},
+_react2.default.createElement(_Body.Body,{style:{borderColor:"transparent"},__source:{fileName:_jsxFileName,lineNumber:126}},
+_react2.default.createElement(_Text.Text,{__source:{fileName:_jsxFileName,lineNumber:127}},
 data.text)),
 
 
-_react2.default.createElement(_Right.Right,{__source:{fileName:_jsxFileName,lineNumber:129}}));
+_react2.default.createElement(_Right.Right,{__source:{fileName:_jsxFileName,lineNumber:131}}));
 
-},__source:{fileName:_jsxFileName,lineNumber:92}})))));
+},__source:{fileName:_jsxFileName,lineNumber:94}})))));
 
 
 

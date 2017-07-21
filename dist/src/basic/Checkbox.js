@@ -41,6 +41,7 @@ var platformStyle=variables.platformStyle;
 var platform=variables.platform;
 return(
 _react2.default.createElement(_reactNative.TouchableOpacity,_extends({
+accessible:false,
 ref:function ref(c){return _this2._root=c;}},
 this.prepareRootProps(variables),{__source:{fileName:_jsxFileName,lineNumber:43}}),
 
@@ -53,7 +54,7 @@ lineHeight:variables.CheckboxIconSize},
 name:
 platform==="ios"&&platformStyle!=="material"?
 "ios-checkmark-outline":
-"md-checkmark",__source:{fileName:_jsxFileName,lineNumber:47}})));
+"md-checkmark",__source:{fileName:_jsxFileName,lineNumber:48}})));
 
 
 

@@ -69,6 +69,7 @@ class ActionSheetContainer extends Component {
         onRequestClose={() => this.setState({ modalVisible: false })}
       >
         <TouchableOpacity
+          accessible={false}
           activeOpacity={1}
           onPress={() => this.setState({ modalVisible: false })}
           style={{
@@ -78,6 +79,7 @@ class ActionSheetContainer extends Component {
           }}
         >
           <TouchableOpacity
+            accessible={false}
             activeOpacity={1}
             style={{
               backgroundColor: "#fff",

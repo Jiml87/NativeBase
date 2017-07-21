@@ -27,6 +27,7 @@ var platform=variables.platform;
 
 return(
 _react2.default.createElement(_reactNative.TouchableOpacity,_extends({
+accessible:false,
 ref:function ref(c){return _this2._root=c;}},
 this.prepareRootProps(),{__source:{fileName:_jsxFileName,lineNumber:29}}),
 
@@ -39,7 +40,7 @@ lineHeight:25,
 height:20,
 fontSize:variables.radioBtnSize},
 
-name:"ios-checkmark",__source:{fileName:_jsxFileName,lineNumber:35}}):
+name:"ios-checkmark",__source:{fileName:_jsxFileName,lineNumber:36}}):
 
 _react2.default.createElement(_Ionicons2.default,{
 style:{
@@ -59,7 +60,7 @@ this.props.selected?
 "ios-radio-button-off":
 this.props.selected?
 "md-radio-button-on":
-"md-radio-button-off",__source:{fileName:_jsxFileName,lineNumber:44}})));
+"md-radio-button-off",__source:{fileName:_jsxFileName,lineNumber:45}})));
 
 
 

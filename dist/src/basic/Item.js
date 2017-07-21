@@ -266,6 +266,7 @@ return(0,_computeProps2.default)(this.props,defaultProps);
 {var _this4=this;
 return(
 _react2.default.createElement(_reactNative.TouchableOpacity,_extends({
+accessible:false,
 ref:function ref(c){return _this4._root=c;}},
 this.prepareRootProps(),{
 activeOpacity:1,__source:{fileName:_jsxFileName,lineNumber:268}}),

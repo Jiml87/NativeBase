@@ -4,7 +4,7 @@ TouchableOpacity=ReactNative.TouchableOpacity,View=ReactNative.View;
 
 var Button=function Button(props){
 return(
-React.createElement(TouchableOpacity,_extends({},props,{__source:{fileName:_jsxFileName,lineNumber:7}}),
+React.createElement(TouchableOpacity,_extends({accessible:false},props,{__source:{fileName:_jsxFileName,lineNumber:7}}),
 props.children));
 
 

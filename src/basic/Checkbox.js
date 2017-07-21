@@ -41,6 +41,7 @@ class CheckBox extends Component {
     const platform = variables.platform;
     return (
       <TouchableOpacity
+        accessible={false}
         ref={c => (this._root = c)}
         {...this.prepareRootProps(variables)}
       >

@@ -417,6 +417,7 @@ _reactNative.Platform.OS==="ios"||
 _platform2.default.androidRipple===false||
 _reactNative.Platform["Version"]<=21?
 _react2.default.createElement(_reactNative.TouchableOpacity,_extends({
+accessible:false,
 onPress:function onPress(){return _this5.fabOnPress();}},
 this.prepareFabProps(),{
 activeOpacity:1,__source:{fileName:_jsxFileName,lineNumber:419}}),
@@ -432,9 +433,9 @@ this.props.androidRippleColor):
 
 _reactNative.TouchableNativeFeedback.Ripple(_platform2.default.androidRippleColor)},
 
-this.prepareFabProps(),{__source:{fileName:_jsxFileName,lineNumber:426}}),
+this.prepareFabProps(),{__source:{fileName:_jsxFileName,lineNumber:427}}),
 
-_react2.default.createElement(_reactNative.View,_extends({style:this.getInitialStyle().fab},this.props.style,{__source:{fileName:_jsxFileName,lineNumber:437}}),
+_react2.default.createElement(_reactNative.View,_extends({style:this.getInitialStyle().fab},this.props.style,{__source:{fileName:_jsxFileName,lineNumber:438}}),
 this.renderFab()))));
 
 

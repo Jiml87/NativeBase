@@ -417,6 +417,7 @@ class Fab extends Component {
         variables.androidRipple === false ||
         Platform["Version"] <= 21
           ? <TouchableOpacity
+              accessible={false}
               onPress={() => this.fabOnPress()}
               {...this.prepareFabProps()}
               activeOpacity={1}

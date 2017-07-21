@@ -27,6 +27,7 @@ class Radio extends Component {
 
     return (
       <TouchableOpacity
+        accessible={false}
         ref={c => (this._root = c)}
         {...this.prepareRootProps()}
       >

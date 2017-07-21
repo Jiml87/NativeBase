@@ -51,7 +51,8 @@ _platform2.default.androidRipple===false||
 _reactNative.Platform["Version"]<=21)
 {
 return(
-_react2.default.createElement(_reactNative.TouchableOpacity,_extends({},
+_react2.default.createElement(_reactNative.TouchableOpacity,_extends({
+accessible:false},
 this.prepareRootProps(),{
 ref:function ref(c){return _this2._root=c;},
 activeOpacity:
@@ -64,6 +65,7 @@ children));
 }else{
 return(
 _react2.default.createElement(_reactNative.TouchableNativeFeedback,_extends({
+accessible:false,
 ref:function ref(c){return _this2._root=c;},
 onPress:this.props.onPress,
 background:
@@ -71,9 +73,9 @@ this.props.androidRippleColor?
 _reactNative.TouchableNativeFeedback.Ripple(this.props.androidRippleColor):
 _reactNative.TouchableNativeFeedback.Ripple(_platform2.default.androidRippleColor)},
 
-this.prepareRootProps(),{__source:{fileName:_jsxFileName,lineNumber:66}}),
+this.prepareRootProps(),{__source:{fileName:_jsxFileName,lineNumber:67}}),
 
-_react2.default.createElement(_reactNative.View,_extends({},this.prepareRootProps(),{__source:{fileName:_jsxFileName,lineNumber:76}}),
+_react2.default.createElement(_reactNative.View,_extends({},this.prepareRootProps(),{__source:{fileName:_jsxFileName,lineNumber:78}}),
 children)));
 
 
