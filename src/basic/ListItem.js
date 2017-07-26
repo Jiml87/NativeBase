@@ -27,6 +27,7 @@ class ListItem extends Component {
     ) {
       return (
         <TouchableHighlight
+          accessible={false}
           onPress={this.props.onPress}
           onLongPress={this.props.onLongPress}
           ref={c => (this._root = c)}
@@ -38,6 +39,7 @@ class ListItem extends Component {
     } else {
       return (
         <TouchableNativeFeedback
+          accessible={false}
           ref={c => (this._root = c)}
           onPress={this.props.onPress}
           onLongPress={this.props.onLongPress}
