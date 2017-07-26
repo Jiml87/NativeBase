@@ -20,28 +20,30 @@ _reactNative.Platform.Version<=21)
 {
 return(
 _react2.default.createElement(_reactNative.TouchableHighlight,{
+accessible:false,
 onPress:this.props.onPress,
 onLongPress:this.props.onLongPress,
 ref:function ref(c){return _this2._root=c;},
 underlayColor:variables.listBtnUnderlayColor,__source:{fileName:_jsxFileName,lineNumber:22}},
 
-_react2.default.createElement(_reactNative.View,_extends({},this.props,{__source:{fileName:_jsxFileName,lineNumber:28}}),this.props.children)));
+_react2.default.createElement(_reactNative.View,_extends({},this.props,{__source:{fileName:_jsxFileName,lineNumber:29}}),this.props.children)));
 
 
 }else{
 return(
 _react2.default.createElement(_reactNative.TouchableNativeFeedback,{
+accessible:false,
 ref:function ref(c){return _this2._root=c;},
 onPress:this.props.onPress,
 onLongPress:this.props.onLongPress,
 background:
 this.props.androidRippleColor?
 _reactNative.TouchableNativeFeedback.Ripple(this.props.androidRippleColor):
-_reactNative.TouchableNativeFeedback.Ripple(_platform2.default.androidRippleColorDark),__source:{fileName:_jsxFileName,lineNumber:33}},
+_reactNative.TouchableNativeFeedback.Ripple(_platform2.default.androidRippleColorDark),__source:{fileName:_jsxFileName,lineNumber:34}},
 
 
-_react2.default.createElement(_reactNative.View,{style:{marginLeft:-17,paddingLeft:17},__source:{fileName:_jsxFileName,lineNumber:43}},
-_react2.default.createElement(_reactNative.View,_extends({},this.props,{__source:{fileName:_jsxFileName,lineNumber:44}}),this.props.children))));
+_react2.default.createElement(_reactNative.View,{style:{marginLeft:-17,paddingLeft:17},__source:{fileName:_jsxFileName,lineNumber:45}},
+_react2.default.createElement(_reactNative.View,_extends({},this.props,{__source:{fileName:_jsxFileName,lineNumber:46}}),this.props.children))));
 
 
 
