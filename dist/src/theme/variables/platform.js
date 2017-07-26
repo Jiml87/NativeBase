@@ -8,6 +8,9 @@ var platform=_reactNative.Platform.OS;
 var platformStyle=undefined;exports.default=
 
 {
+
+accessible:false,
+
 platformStyle:platformStyle,
 platform:platform,
 

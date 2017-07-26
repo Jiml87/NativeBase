@@ -8,6 +8,9 @@ const platform = Platform.OS;
 const platformStyle = undefined;
 
 export default {
+  //Toucheble* show children(need for autotest )
+  accessible: false,
+
   platformStyle,
   platform,
   // AndroidRipple

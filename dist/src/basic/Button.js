@@ -52,7 +52,7 @@ _reactNative.Platform["Version"]<=21)
 {
 return(
 _react2.default.createElement(_reactNative.TouchableOpacity,_extends({
-accessible:false},
+accessible:variable.accessible},
 this.prepareRootProps(),{
 ref:function ref(c){return _this2._root=c;},
 activeOpacity:
@@ -65,7 +65,7 @@ children));
 }else{
 return(
 _react2.default.createElement(_reactNative.TouchableNativeFeedback,_extends({
-accessible:false,
+accessible:variable.accessible,
 ref:function ref(c){return _this2._root=c;},
 onPress:this.props.onPress,
 background:
