@@ -35,7 +35,7 @@ var _Form=require("./Form");var _Form2=_interopRequireDefault(_Form);
 var _Separator=require("./Separator");var _Separator2=_interopRequireDefault(_Separator);
 var _platform=require("./../variables/platform");var _platform2=_interopRequireDefault(_platform);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=
 
-function(){var variables=arguments.length>0&&arguments[0]!==undefined?arguments[0]:_platform2.default;
+function(){var variables=arguments.length>0&&arguments[0]!==undefined?arguments[0]:variables;
 var theme={
 variables:variables,
 "NativeBase.Left":{

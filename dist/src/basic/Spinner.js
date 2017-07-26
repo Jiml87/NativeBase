@@ -11,8 +11,8 @@ Spinner=function(_Component){_inherits(Spinner,_Component);function Spinner(){_c
 
 {var _this2=this;
 var variables=this.context.theme?
-this.context.theme["@@shoutem.theme/themeStyle"].variables:_platform2.default;
-
+this.context.theme["@@shoutem.theme/themeStyle"].variables:
+variables;
 return(
 _react2.default.createElement(_reactNative.ActivityIndicator,_extends({
 ref:function ref(c){return _this2._root=c;}},

@@ -8,7 +8,7 @@ import {
 
 import { connectStyle } from "native-base-shoutem-theme";
 import mapPropsToStyleNames from "../Utils/mapPropsToStyleNames";
-import variable from "../theme/variables/platform";
+import variables from "../theme/variables/platform";
 
 class ListItem extends Component {
   static contextTypes = {
@@ -17,11 +17,11 @@ class ListItem extends Component {
   render() {
     const variables = this.context.theme
       ? this.context.theme["@@shoutem.theme/themeStyle"].variables
-      : variable;
+      : variables;
 
     if (
       Platform.OS === "ios" ||
-      variable.androidRipple === false ||
+      variables.androidRipple === false ||
       (!this.props.onPress && !this.props.onLongPress) ||
       Platform.Version <= 21
     ) {
@@ -46,7 +46,7 @@ class ListItem extends Component {
           background={
             this.props.androidRippleColor
               ? TouchableNativeFeedback.Ripple(this.props.androidRippleColor)
-              : TouchableNativeFeedback.Ripple(variable.androidRippleColorDark)
+              : TouchableNativeFeedback.Ripple(variables.androidRippleColorDark)
           }
         >
           <View style={{ marginLeft: -17, paddingLeft: 17 }}>

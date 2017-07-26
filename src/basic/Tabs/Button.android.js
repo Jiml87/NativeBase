@@ -1,7 +1,7 @@
 const React = require("react");
 const ReactNative = require("react-native");
 const { TouchableNativeFeedback, View } = ReactNative;
-import variable from "../../theme/variables/platform";
+import variables from "../../theme/variables/platform";
 
 
 const Button = props => {

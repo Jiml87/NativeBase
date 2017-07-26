@@ -7,7 +7,7 @@ var _platform=require("../../theme/variables/platform");var _platform2=_interopR
 var Button=function Button(props){
 return(
 React.createElement(TouchableNativeFeedback,_extends({
-accessible:variables.accessible,
+accessible:_platform2.default.accessible,
 delayPressIn:0,
 background:TouchableNativeFeedback.SelectableBackground()},
 props,{__source:{fileName:_jsxFileName,lineNumber:9}}),

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { ActivityIndicator } from "react-native";
 
 import { connectStyle } from "native-base-shoutem-theme";
-import variable from "../theme/variables/platform";
+import variables from "../theme/variables/platform";
 import mapPropsToStyleNames from "../Utils/mapPropsToStyleNames";
 
 class Spinner extends Component {
@@ -12,7 +12,7 @@ class Spinner extends Component {
   render() {
     const variables = this.context.theme
       ? this.context.theme["@@shoutem.theme/themeStyle"].variables
-      : variable;
+      : variables;
     return (
       <ActivityIndicator
         ref={c => (this._root = c)}

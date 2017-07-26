@@ -9,7 +9,7 @@ import {
   Platform,
   View
 } from "react-native";
-import variable from "../../theme/variables/platform";
+import variables from "../../theme/variables/platform";
 
 const styles = StyleSheet.create({
   button: {

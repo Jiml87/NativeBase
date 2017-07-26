@@ -5,7 +5,7 @@ import { connectStyle } from "native-base-shoutem-theme";
 
 import { IconNB } from "../IconNB";
 import ic from "./NBIcons.json";
-import variable from "./../../theme/variables/platform";
+import variables from "./../../theme/variables/platform";
 import _ from "lodash";
 
 import mapPropsToStyleNames from "../../Utils/mapPropsToStyleNames";
@@ -18,7 +18,7 @@ class Icon extends Component {
   getName() {
     const variables = this.context.theme
       ? this.context.theme["@@shoutem.theme/themeStyle"].variables
-      : variable;
+      : variables;
     const platformStyle = variables.platformStyle;
     const platform = variables.platform;
 

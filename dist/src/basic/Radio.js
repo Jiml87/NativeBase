@@ -20,7 +20,7 @@ return(0,_computeProps2.default)(this.props,defaultProps);
 
 
 {var _this2=this;
-var variables=this.context.theme?this.context.theme['@@shoutem.theme/themeStyle'].variables:_platform2.default;
+var variables=this.context.theme?this.context.theme['@@shoutem.theme/themeStyle'].variables:variables;
 var platformStyle=variables.platformStyle;
 var platform=variables.platform;
 

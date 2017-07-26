@@ -3,7 +3,7 @@ Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.ass
 var _Picker=require("./Picker");var _Picker2=_interopRequireDefault(_Picker);
 var _platform=require("./../variables/platform");var _platform2=_interopRequireDefault(_platform);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=
 
-function(){var variables=arguments.length>0&&arguments[0]!==undefined?arguments[0]:_platform2.default;
+function(){var variables=arguments.length>0&&arguments[0]!==undefined?arguments[0]:variables;
 var platform=variables.platform;
 
 var listItemTheme={

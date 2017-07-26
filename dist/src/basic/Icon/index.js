@@ -17,8 +17,8 @@ Icon=function(_Component){_inherits(Icon,_Component);function Icon(){_classCallC
 
 {
 var variables=this.context.theme?
-this.context.theme["@@shoutem.theme/themeStyle"].variables:_platform2.default;
-
+this.context.theme["@@shoutem.theme/themeStyle"].variables:
+variables;
 var platformStyle=variables.platformStyle;
 var platform=variables.platform;
 

@@ -3,7 +3,7 @@ import { TouchableOpacity, Platform } from "react-native";
 import IconNB from "react-native-vector-icons/Ionicons";
 import { connectStyle } from "native-base-shoutem-theme";
 import mapPropsToStyleNames from "../Utils/mapPropsToStyleNames";
-import variable from "../theme/variables/platform";
+import variables from "../theme/variables/platform";
 import _ from "lodash";
 import computeProps from "../Utils/computeProps";
 
@@ -35,7 +35,7 @@ class CheckBox extends Component {
   render() {
     const variables = this.context.theme
       ? this.context.theme["@@shoutem.theme/themeStyle"].variables
-      : variable;
+      : variables;
     const platformStyle = variables.platformStyle;
     const platform = variables.platform;
     return (

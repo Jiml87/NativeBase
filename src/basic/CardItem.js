@@ -3,7 +3,7 @@ import { TouchableOpacity, View } from "react-native";
 
 import { connectStyle } from "native-base-shoutem-theme";
 import mapPropsToStyleNames from "../Utils/mapPropsToStyleNames";
-import variable from "../theme/variables/platform";
+import variables from "../theme/variables/platform";
 
 class CardItem extends Component {
   render() {

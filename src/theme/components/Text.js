@@ -1,6 +1,6 @@
-import variable from "./../variables/platform";
+import variables from "./../variables/platform";
 
-export default (variables = variable) => {
+export default (variables = variables) => {
   const textTheme = {
     fontSize: variables.DefaultFontSize - 1,
     fontFamily: variables.fontFamily,

@@ -1,7 +1,7 @@
 const React = require("react");
 const ReactNative = require("react-native");
 import { connectStyle, StyleProvider } from "native-base-shoutem-theme";
-import variable from "./../../theme/variables/platform";
+import variables from "./../../theme/variables/platform";
 import { TabHeading, Text, TabContainer } from "./../../index";
 import _ from "lodash";
 
@@ -26,8 +26,8 @@ const DefaultTabBar = React.createClass({
 
   getDefaultProps() {
     return {
-      activeTextColor: variable.topTabBarActiveTextColor,
-      inactiveTextColor: variable.topTabBarTextColor,
+      activeTextColor: variables.topTabBarActiveTextColor,
+      inactiveTextColor: variables.topTabBarTextColor,
       backgroundColor: null
     };
   },
@@ -86,7 +86,7 @@ const DefaultTabBar = React.createClass({
   render() {
     const variables = this.context.theme
       ? this.context.theme["@@shoutem.theme/themeStyle"].variables
-      : variable;
+      : variables;
     const platformStyle = variables.platformStyle;
     const containerWidth = this.props.containerWidth;
     const numberOfTabs = this.props.tabs.length;

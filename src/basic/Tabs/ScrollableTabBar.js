@@ -1,7 +1,7 @@
 const React = require("react");
 const ReactNative = require("react-native");
 import { connectStyle, StyleProvider } from "native-base-shoutem-theme";
-import variable from "./../../theme/variables/platform";
+import variables from "./../../theme/variables/platform";
 import { TabHeading, Text, TabContainer } from "./../../index";
 import _ from "lodash";
 const {
@@ -202,7 +202,7 @@ const ScrollableTabBar = React.createClass({
   render() {
     const variables = this.context.theme
       ? this.context.theme["@@shoutem.theme/themeStyle"].variables
-      : variable;
+      : variables;
     const tabUnderlineStyle = {
       position: "absolute",
       height: 4,

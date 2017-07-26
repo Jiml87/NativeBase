@@ -201,8 +201,8 @@ this.updateView({value:this.props.scrollValue._value});
 
 render:function render(){var _this=this;
 var variables=this.context.theme?
-this.context.theme["@@shoutem.theme/themeStyle"].variables:_platform2.default;
-
+this.context.theme["@@shoutem.theme/themeStyle"].variables:
+variables;
 var tabUnderlineStyle={
 position:"absolute",
 height:4,

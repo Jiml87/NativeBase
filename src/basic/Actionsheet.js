@@ -20,7 +20,7 @@ import { Body } from "./Body";
 import { List } from "./List";
 import { ListItem } from "./ListItem";
 import mapPropsToStyleNames from "../Utils/mapPropsToStyleNames";
-import variable from "../theme/variables/platform";
+import variables from "../theme/variables/platform";
 
 class ActionSheetContainer extends Component {
   constructor(props) {

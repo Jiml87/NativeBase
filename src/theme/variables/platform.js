@@ -21,7 +21,7 @@ export default {
   // Badge
   badgeBg: "#ED1727",
   badgeColor: "#fff",
-  // New Variable
+  // New variables
   badgePadding: platform === "ios" ? 3 : 0,
 
   // Button
@@ -50,7 +50,7 @@ export default {
   segmentBorderColor: platform === "ios" ? "#007aff" : "#fff",
   segmentBorderColorMain: platform === "ios" ? "#a7a6ab" : "#3F51B5",
 
-  // New Variable
+  // New variables
   get defaultTextColor() {
     return this.textColor;
   },
@@ -212,7 +212,7 @@ export default {
   // Card
   cardBorderColor: "#ccc",
 
-  // Changed Variable
+  // Changed variables
   listItemPadding: platform === "ios" ? 10 : 12,
 
   listNoteColor: "#808080",
@@ -226,7 +226,7 @@ export default {
   radioBtnSize: platform === "ios" ? 25 : 23,
   radioSelectedColorAndroid: "#3F51B5",
 
-  // New Variable
+  // New variables
   radioBtnLineHeight: platform === "ios" ? 29 : 24,
 
   radioColor: "#7e7e7e",
@@ -255,7 +255,7 @@ export default {
   subTitleFontSize: platform === "ios" ? 12 : 14,
   subtitleColor: platform === "ios" ? "#8e8e93" : "#FFF",
 
-  // New Variable
+  // New variables
   titleFontColor: platform === "ios" ? "#000" : "#FFF",
 
   // Other
@@ -275,6 +275,6 @@ export default {
   deviceWidth,
   deviceHeight,
 
-  // New Variable
+  // New variables
   inputGroupRoundedBorderRadius: 30
 };

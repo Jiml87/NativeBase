@@ -1,6 +1,6 @@
-import variable from "./../variables/platform";
+import variables from "./../variables/platform";
 
-export default (variables = variable) => {
+export default (variables = variables) => {
   const platformStyle = variables.platformStyle;
   const platform = variables.platform;
 

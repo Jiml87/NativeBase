@@ -12,8 +12,8 @@ Header=function(_Component){_inherits(Header,_Component);function Header(){_clas
 
 {var _this2=this;
 var variables=this.context.theme?
-this.context.theme["@@shoutem.theme/themeStyle"].variables:_platform2.default;
-
+this.context.theme["@@shoutem.theme/themeStyle"].variables:
+variables;
 var platformStyle=variables.platformStyle;
 
 return(
