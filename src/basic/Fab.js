@@ -381,7 +381,7 @@ class Fab extends Component {
       <Animated.View style={this.getContainerStyle()}>
         {this.renderButtons()}
         <TouchableOpacity
-          accessible={variable.accessible}
+          accessible={variables.accessible}
           onPress={() => this.fabOnPress()}
           {...this.prepareFabProps()}
           activeOpacity={1}

@@ -97,7 +97,7 @@ const NativeButton = React.createClass({
 
       return (
         <TouchableNativeFeedback {...buttonProps}>
-          accessible={variable.accessible}
+          accessible={variables.accessible}
           <View style={[styles.button, this.props.style, disabledStyle]}>
             {this._renderText()}
           </View>
@@ -108,7 +108,7 @@ const NativeButton = React.createClass({
     // Render default button
     return (
       <TouchableHighlight
-        accessible={variable.accessible}
+        accessible={variables.accessible}
         {...buttonProps}
         style={[styles.button, this.props.style, disabledStyle]}
         underlayColor={this.props.underlayColor}

@@ -28,7 +28,7 @@ class Radio extends Component {
       <TouchableOpacity
         ref={c => this._root = c}
         {...this.prepareRootProps()}
-        accessible={variable.accessible}
+        accessible={variables.accessible}
       >
         {(Platform.OS === 'ios' && !this.props.standardStyle) ?
           (this.props.selected) && <Icon

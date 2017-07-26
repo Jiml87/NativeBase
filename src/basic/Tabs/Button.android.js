@@ -7,7 +7,7 @@ import variable from "../../theme/variables/platform";
 const Button = props => {
   return (
     <TouchableNativeFeedback
-      accessible={variable.accessible}
+      accessible={variables.accessible}
       delayPressIn={0}
       background={TouchableNativeFeedback.SelectableBackground()} // eslint-disable-line new-cap
       {...props}

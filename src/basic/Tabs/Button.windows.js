@@ -5,7 +5,7 @@ import variable from "../../theme/variables/platform";
 
 const Button = props => {
   return (
-    <TouchableOpacity {...props} accessible={variable.accessible}>
+    <TouchableOpacity {...props} accessible={variables.accessible}>
       {props.children}
     </TouchableOpacity>
   );

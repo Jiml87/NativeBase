@@ -241,7 +241,7 @@ class Item extends Component {
   render() {
     return (
       <TouchableOpacity
-        accessible={variable.accessible}
+        accessible={variables.accessible}
         ref={c => (this._root = c)}
         {...this.prepareRootProps()}
         activeOpacity={1}
