@@ -72,7 +72,7 @@ visible:this.state.modalVisible,
 onRequestClose:function onRequestClose(){return _this2.setState({modalVisible:false});},__source:{fileName:_jsxFileName,lineNumber:68}},
 
 _react2.default.createElement(_reactNative.TouchableOpacity,{
-accessible:_platform2.default.accessible,
+accessible:variables.accessible,
 activeOpacity:1,
 onPress:function onPress(){return _this2.setState({modalVisible:false});},
 style:{
@@ -82,7 +82,7 @@ justifyContent:"flex-end"},__source:{fileName:_jsxFileName,lineNumber:74}},
 
 
 _react2.default.createElement(_reactNative.TouchableOpacity,{
-accessible:_platform2.default.accessible,
+accessible:variables.accessible,
 activeOpacity:1,
 style:{
 backgroundColor:"#fff",

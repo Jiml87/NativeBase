@@ -5,7 +5,7 @@ var _platform=require("../../theme/variables/platform");var _platform2=_interopR
 
 var Button=function Button(props){
 return(
-React.createElement(TouchableOpacity,_extends({},props,{accessible:_platform2.default.accessible,__source:{fileName:_jsxFileName,lineNumber:8}}),
+React.createElement(TouchableOpacity,_extends({},props,{accessible:variables.accessible,__source:{fileName:_jsxFileName,lineNumber:8}}),
 props.children));
 
 

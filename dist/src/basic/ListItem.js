@@ -27,7 +27,7 @@ _reactNative.Platform.Version<=21)
 {
 return(
 _react2.default.createElement(_reactNative.TouchableHighlight,{
-accessible:_platform2.default.accessible,
+accessible:variables.accessible,
 onPress:this.props.onPress,
 onLongPress:this.props.onLongPress,
 ref:function ref(c){return _this2._root=c;},
@@ -39,7 +39,7 @@ _react2.default.createElement(_reactNative.View,_extends({},this.props,{__source
 }else{
 return(
 _react2.default.createElement(_reactNative.TouchableNativeFeedback,{
-accessible:_platform2.default.accessible,
+accessible:variables.accessible,
 ref:function ref(c){return _this2._root=c;},
 onPress:this.props.onPress,
 onLongPress:this.props.onLongPress,

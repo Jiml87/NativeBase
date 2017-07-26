@@ -10,7 +10,7 @@ CardItem=function(_Component){_inherits(CardItem,_Component);function CardItem()
 if(this.props.button){
 return(
 _react2.default.createElement(_reactNative.TouchableOpacity,_extends({
-accessible:_platform2.default.accessible,
+accessible:variables.accessible,
 ref:function ref(c){return _this2._root=c;}},
 this.props,{
 activeOpacity:this.props.button?0.2:1,__source:{fileName:_jsxFileName,lineNumber:12}}),

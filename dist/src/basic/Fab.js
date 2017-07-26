@@ -381,7 +381,7 @@ return(
 _react2.default.createElement(_reactNative.Animated.View,{style:this.getContainerStyle(),__source:{fileName:_jsxFileName,lineNumber:381}},
 this.renderButtons(),
 _react2.default.createElement(_reactNative.TouchableOpacity,_extends({
-accessible:_platform2.default.accessible,
+accessible:variables.accessible,
 onPress:function onPress(){return _this4.fabOnPress();}},
 this.prepareFabProps(),{
 activeOpacity:1,__source:{fileName:_jsxFileName,lineNumber:383}}),

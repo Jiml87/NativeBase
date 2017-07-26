@@ -97,7 +97,7 @@ _reactNative.TouchableNativeFeedback.SelectableBackground()});
 
 return(
 _react2.default.createElement(_reactNative.TouchableNativeFeedback,_extends({},buttonProps,{__source:{fileName:_jsxFileName,lineNumber:99}}),"accessible=",
-_platform2.default.accessible,
+variables.accessible,
 _react2.default.createElement(_reactNative.View,{style:[styles.button,this.props.style,disabledStyle],__source:{fileName:_jsxFileName,lineNumber:101}},
 this._renderText())));
 
@@ -108,7 +108,7 @@ this._renderText())));
 
 return(
 _react2.default.createElement(_reactNative.TouchableHighlight,_extends({
-accessible:_platform2.default.accessible},
+accessible:variables.accessible},
 buttonProps,{
 style:[styles.button,this.props.style,disabledStyle],
 underlayColor:this.props.underlayColor,__source:{fileName:_jsxFileName,lineNumber:110}}),

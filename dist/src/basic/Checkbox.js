@@ -40,7 +40,7 @@ var platformStyle=variables.platformStyle;
 var platform=variables.platform;
 return(
 _react2.default.createElement(_reactNative.TouchableOpacity,_extends({
-accessible:_platform2.default.accessible,
+accessible:variables.accessible,
 ref:function ref(c){return _this2._root=c;}},
 this.prepareRootProps(variables),{__source:{fileName:_jsxFileName,lineNumber:42}}),
 
