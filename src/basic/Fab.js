@@ -12,6 +12,7 @@ import _ from "lodash";
 import { connectStyle } from "native-base-shoutem-theme";
 import mapPropsToStyleNames from "../Utils/mapPropsToStyleNames";
 import computeProps from "../Utils/computeProps";
+import variable from "../theme/variables/platform";
 
 const AnimatedFab = Animated.createAnimatedComponent(Button);
 
@@ -380,6 +381,7 @@ class Fab extends Component {
       <Animated.View style={this.getContainerStyle()}>
         {this.renderButtons()}
         <TouchableOpacity
+          accessible={variable.accessible}
           onPress={() => this.fabOnPress()}
           {...this.prepareFabProps()}
           activeOpacity={1}

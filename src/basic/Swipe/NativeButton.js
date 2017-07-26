@@ -9,6 +9,7 @@ import {
   Platform,
   View
 } from "react-native";
+import variable from "../../theme/variables/platform";
 
 const styles = StyleSheet.create({
   button: {
@@ -96,6 +97,7 @@ const NativeButton = React.createClass({
 
       return (
         <TouchableNativeFeedback {...buttonProps}>
+          accessible={variable.accessible}
           <View style={[styles.button, this.props.style, disabledStyle]}>
             {this._renderText()}
           </View>
@@ -106,6 +108,7 @@ const NativeButton = React.createClass({
     // Render default button
     return (
       <TouchableHighlight
+        accessible={variable.accessible}
         {...buttonProps}
         style={[styles.button, this.props.style, disabledStyle]}
         underlayColor={this.props.underlayColor}

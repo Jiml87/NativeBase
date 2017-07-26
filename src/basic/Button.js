@@ -52,6 +52,7 @@ class Button extends Component {
     ) {
       return (
         <TouchableOpacity
+          accessible={variable.accessible}
           {...this.prepareRootProps()}
           ref={c => (this._root = c)}
           activeOpacity={
@@ -64,6 +65,7 @@ class Button extends Component {
     } else {
       return (
         <TouchableNativeFeedback
+          accessible={variable.accessible}
           ref={c => (this._root = c)}
           onPress={this.props.onPress}
           background={

@@ -1,14 +1,15 @@
-Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _react=require("react");var _react2=_interopRequireDefault(_react);
+Object.defineProperty(exports,"__esModule",{value:true});var _jsxFileName="src/basic/Swipe/NativeButton.js";var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _react=require("react");var _react2=_interopRequireDefault(_react);
 
-var _reactNative=require("react-native");function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
-
-
+var _reactNative=require("react-native");
 
 
 
 
 
 
+
+
+var _platform=require("../../theme/variables/platform");var _platform2=_interopRequireDefault(_platform);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
 
 var styles=_reactNative.StyleSheet.create({
 button:{
@@ -57,7 +58,7 @@ return this.props.children;
 }
 
 return(
-_react2.default.createElement(_reactNative.Text,{style:[styles.textButton,this.props.textStyle]},
+_react2.default.createElement(_reactNative.Text,{style:[styles.textButton,this.props.textStyle],__source:{fileName:_jsxFileName,lineNumber:61}},
 this.props.children));
 
 
@@ -95,8 +96,9 @@ _reactNative.TouchableNativeFeedback.SelectableBackground()});
 
 
 return(
-_react2.default.createElement(_reactNative.TouchableNativeFeedback,buttonProps,
-_react2.default.createElement(_reactNative.View,{style:[styles.button,this.props.style,disabledStyle]},
+_react2.default.createElement(_reactNative.TouchableNativeFeedback,_extends({},buttonProps,{__source:{fileName:_jsxFileName,lineNumber:99}}),"accessible=",
+_platform2.default.accessible,
+_react2.default.createElement(_reactNative.View,{style:[styles.button,this.props.style,disabledStyle],__source:{fileName:_jsxFileName,lineNumber:101}},
 this._renderText())));
 
 
@@ -105,10 +107,11 @@ this._renderText())));
 
 
 return(
-_react2.default.createElement(_reactNative.TouchableHighlight,_extends({},
+_react2.default.createElement(_reactNative.TouchableHighlight,_extends({
+accessible:_platform2.default.accessible},
 buttonProps,{
 style:[styles.button,this.props.style,disabledStyle],
-underlayColor:this.props.underlayColor}),
+underlayColor:this.props.underlayColor,__source:{fileName:_jsxFileName,lineNumber:110}}),
 
 this._renderText()));
 

@@ -3,12 +3,14 @@ import { TouchableOpacity, View } from "react-native";
 
 import { connectStyle } from "native-base-shoutem-theme";
 import mapPropsToStyleNames from "../Utils/mapPropsToStyleNames";
+import variable from "../theme/variables/platform";
 
 class CardItem extends Component {
   render() {
     if (this.props.button) {
       return (
         <TouchableOpacity
+          accessible={variable.accessible}
           ref={c => (this._root = c)}
           {...this.props}
           activeOpacity={this.props.button ? 0.2 : 1}

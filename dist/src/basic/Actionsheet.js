@@ -1,4 +1,4 @@
-Object.defineProperty(exports,"__esModule",{value:true});exports.ActionSheetContainer=undefined;var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();
+Object.defineProperty(exports,"__esModule",{value:true});exports.ActionSheetContainer=undefined;var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _jsxFileName="src/basic/Actionsheet.js";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();
 
 var _react=require("react");var _react2=_interopRequireDefault(_react);
 var _reactNative=require("react-native");
@@ -19,7 +19,8 @@ var _Right=require("./Right");
 var _Body=require("./Body");
 var _List=require("./List");
 var _ListItem=require("./ListItem");
-var _mapPropsToStyleNames=require("../Utils/mapPropsToStyleNames");var _mapPropsToStyleNames2=_interopRequireDefault(_mapPropsToStyleNames);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+var _mapPropsToStyleNames=require("../Utils/mapPropsToStyleNames");var _mapPropsToStyleNames2=_interopRequireDefault(_mapPropsToStyleNames);
+var _platform=require("../theme/variables/platform");var _platform2=_interopRequireDefault(_platform);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
 
 ActionSheetContainer=function(_Component){_inherits(ActionSheetContainer,_Component);
 function ActionSheetContainer(props){_classCallCheck(this,ActionSheetContainer);var _this=_possibleConstructorReturn(this,(ActionSheetContainer.__proto__||Object.getPrototypeOf(ActionSheetContainer)).call(this,
@@ -68,27 +69,29 @@ _react2.default.createElement(_reactNative.Modal,{
 animationType:"fade",
 transparent:true,
 visible:this.state.modalVisible,
-onRequestClose:function onRequestClose(){return _this2.setState({modalVisible:false});}},
+onRequestClose:function onRequestClose(){return _this2.setState({modalVisible:false});},__source:{fileName:_jsxFileName,lineNumber:68}},
 
 _react2.default.createElement(_reactNative.TouchableOpacity,{
+accessible:_platform2.default.accessible,
 activeOpacity:1,
 onPress:function onPress(){return _this2.setState({modalVisible:false});},
 style:{
 backgroundColor:"rgba(0,0,0,0.4)",
 flex:1,
-justifyContent:"flex-end"}},
+justifyContent:"flex-end"},__source:{fileName:_jsxFileName,lineNumber:74}},
 
 
 _react2.default.createElement(_reactNative.TouchableOpacity,{
+accessible:_platform2.default.accessible,
 activeOpacity:1,
 style:{
 backgroundColor:"#fff",
 height:this.state.length*80,
 padding:15,
-elevation:4}},
+elevation:4},__source:{fileName:_jsxFileName,lineNumber:84}},
 
 
-_react2.default.createElement(_Text.Text,{style:{color:"#757575"}},this.state.title),
+_react2.default.createElement(_Text.Text,{style:{color:"#757575"},__source:{fileName:_jsxFileName,lineNumber:94}},this.state.title),
 _react2.default.createElement(_List.List,{
 style:{marginHorizontal:-15,marginTop:15},
 dataArray:this.state.items,
@@ -99,9 +102,9 @@ onPress:function onPress(){
 _this2.state.callback(id);
 _this2.setState({modalVisible:false});
 },
-style:{borderColor:"transparent"}},
+style:{borderColor:"transparent"},__source:{fileName:_jsxFileName,lineNumber:100}},
 
-_react2.default.createElement(_Text.Text,null,data)):
+_react2.default.createElement(_Text.Text,{__source:{fileName:_jsxFileName,lineNumber:107}},data)):
 
 _react2.default.createElement(_ListItem.ListItem,{
 onPress:function onPress(){
@@ -109,17 +112,17 @@ _this2.state.callback(id);
 _this2.setState({modalVisible:false});
 },
 style:{borderColor:"transparent"},
-icon:true},
+icon:true,__source:{fileName:_jsxFileName,lineNumber:109}},
 
-_react2.default.createElement(_Left.Left,null,
-_react2.default.createElement(_Icon.Icon,{name:data.icon})),
+_react2.default.createElement(_Left.Left,{__source:{fileName:_jsxFileName,lineNumber:117}},
+_react2.default.createElement(_Icon.Icon,{name:data.icon,__source:{fileName:_jsxFileName,lineNumber:118}})),
 
-_react2.default.createElement(_Body.Body,{style:{borderColor:"transparent"}},
-_react2.default.createElement(_Text.Text,null,data.text)),
+_react2.default.createElement(_Body.Body,{style:{borderColor:"transparent"},__source:{fileName:_jsxFileName,lineNumber:120}},
+_react2.default.createElement(_Text.Text,{__source:{fileName:_jsxFileName,lineNumber:121}},data.text)),
 
-_react2.default.createElement(_Right.Right,null));
+_react2.default.createElement(_Right.Right,{__source:{fileName:_jsxFileName,lineNumber:123}}));
 
-}})))));
+},__source:{fileName:_jsxFileName,lineNumber:95}})))));
 
 
 

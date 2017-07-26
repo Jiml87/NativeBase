@@ -20,6 +20,7 @@ import { Body } from "./Body";
 import { List } from "./List";
 import { ListItem } from "./ListItem";
 import mapPropsToStyleNames from "../Utils/mapPropsToStyleNames";
+import variable from "../theme/variables/platform";
 
 class ActionSheetContainer extends Component {
   constructor(props) {
@@ -71,6 +72,7 @@ class ActionSheetContainer extends Component {
         onRequestClose={() => this.setState({ modalVisible: false })}
       >
         <TouchableOpacity
+          accessible={variable.accessible}
           activeOpacity={1}
           onPress={() => this.setState({ modalVisible: false })}
           style={{
@@ -80,6 +82,7 @@ class ActionSheetContainer extends Component {
           }}
         >
           <TouchableOpacity
+            accessible={variable.accessible}
             activeOpacity={1}
             style={{
               backgroundColor: "#fff",
