@@ -25,6 +25,8 @@ class ListItem extends Component {
 					onLongPress={this.props.onLongPress}
 					ref={c => (this._root = c)}
 					underlayColor={variables.listBtnUnderlayColor}
+					testID={this.props.testID}
+					accessibilityLabel={this.props.accessibilityLabel}
 				>
 					<View {...this.props}>{this.props.children}</View>
 				</TouchableHighlight>
@@ -41,6 +43,9 @@ class ListItem extends Component {
 							? TouchableNativeFeedback.Ripple(this.props.androidRippleColor)
 							: TouchableNativeFeedback.Ripple(variable.androidRippleColorDark)
 					}
+					testID={this.props.testID}
+					accessibilityLabel={this.props.accessibilityLabel}
+
 				>
 					<View style={{ marginLeft: -17, paddingLeft: 17 }}>
 						<View {...this.props}>{this.props.children}</View>
@@ -56,7 +61,13 @@ ListItem.propTypes = {
 	style: React.PropTypes.object,
 	itemDivider: React.PropTypes.bool,
 	button: React.PropTypes.bool,
+	accessibilityLabel: React.PropTypes.string,
+	testID: React.PropTypes.string,
 };
+ListItem.defaultProps={
+	accessibilityLabel: '',
+	testID: '',
+}
 
 const StyledListItem = connectStyle('NativeBase.ListItem', {}, mapPropsToStyleNames)(ListItem);
 

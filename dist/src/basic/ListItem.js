@@ -24,9 +24,11 @@ accessible:false,
 onPress:this.props.onPress,
 onLongPress:this.props.onLongPress,
 ref:function ref(c){return _this2._root=c;},
-underlayColor:variables.listBtnUnderlayColor,__source:{fileName:_jsxFileName,lineNumber:22}},
+underlayColor:variables.listBtnUnderlayColor,
+testID:this.props.testID,
+accessibilityLabel:this.props.accessibilityLabel,__source:{fileName:_jsxFileName,lineNumber:22}},
 
-_react2.default.createElement(_reactNative.View,_extends({},this.props,{__source:{fileName:_jsxFileName,lineNumber:29}}),this.props.children)));
+_react2.default.createElement(_reactNative.View,_extends({},this.props,{__source:{fileName:_jsxFileName,lineNumber:31}}),this.props.children)));
 
 
 }else{
@@ -39,11 +41,14 @@ onLongPress:this.props.onLongPress,
 background:
 this.props.androidRippleColor?
 _reactNative.TouchableNativeFeedback.Ripple(this.props.androidRippleColor):
-_reactNative.TouchableNativeFeedback.Ripple(_platform2.default.androidRippleColorDark),__source:{fileName:_jsxFileName,lineNumber:34}},
+_reactNative.TouchableNativeFeedback.Ripple(_platform2.default.androidRippleColorDark),
+
+testID:this.props.testID,
+accessibilityLabel:this.props.accessibilityLabel,__source:{fileName:_jsxFileName,lineNumber:36}},
 
 
-_react2.default.createElement(_reactNative.View,{style:{marginLeft:-17,paddingLeft:17},__source:{fileName:_jsxFileName,lineNumber:45}},
-_react2.default.createElement(_reactNative.View,_extends({},this.props,{__source:{fileName:_jsxFileName,lineNumber:46}}),this.props.children))));
+_react2.default.createElement(_reactNative.View,{style:{marginLeft:-17,paddingLeft:17},__source:{fileName:_jsxFileName,lineNumber:50}},
+_react2.default.createElement(_reactNative.View,_extends({},this.props,{__source:{fileName:_jsxFileName,lineNumber:51}}),this.props.children))));
 
 
 
@@ -55,7 +60,13 @@ ListItem.propTypes=_extends({},
 _reactNative.TouchableHighlight.propTypes,{
 style:_react2.default.PropTypes.object,
 itemDivider:_react2.default.PropTypes.bool,
-button:_react2.default.PropTypes.bool});
+button:_react2.default.PropTypes.bool,
+accessibilityLabel:_react2.default.PropTypes.string,
+testID:_react2.default.PropTypes.string});
+
+ListItem.defaultProps={
+accessibilityLabel:'',
+testID:''};
 
 
 var StyledListItem=(0,_nativeBaseShoutemTheme.connectStyle)('NativeBase.ListItem',{},_mapPropsToStyleNames2.default)(ListItem);exports.
