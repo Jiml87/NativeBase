@@ -29,10 +29,11 @@ this.props.iosBarStyle?
 this.props.iosBarStyle:
 platformStyle==="material"?
 "light-content":
-variables.iosStatusbar,__source:{fileName:_jsxFileName,lineNumber:21}}),
+variables.iosStatusbar,
 
+translucent:this.props.translucent,__source:{fileName:_jsxFileName,lineNumber:21}}),
 
-_react2.default.createElement(_reactNative.View,_extends({ref:function ref(c){return _this2._root=c;}},this.props,{__source:{fileName:_jsxFileName,lineNumber:35}}))));
+_react2.default.createElement(_reactNative.View,_extends({ref:function ref(c){return _this2._root=c;}},this.props,{__source:{fileName:_jsxFileName,lineNumber:36}}))));
 
 
 }}]);return Header;}(_react.Component);Header.contextTypes={theme:_react2.default.PropTypes.object};
@@ -42,7 +43,11 @@ Header.propTypes=_extends({},_reactNative.ViewPropTypes,{
 
 style:_react2.default.PropTypes.object,
 searchBar:_react2.default.PropTypes.bool,
-rounded:_react2.default.PropTypes.bool});
+rounded:_react2.default.PropTypes.bool,
+translucent:_react2.default.PropTypes.bool});
+
+Header.defaultProps={
+translucent:false};
 
 
 var StyledHeader=(0,_nativeBaseShoutemTheme.connectStyle)(
