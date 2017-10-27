@@ -31,6 +31,7 @@ class Header extends Component {
                 ? "light-content"
                 : variables.iosStatusbar
           }
+          translucent={this.props.translucent}
         />
         <View ref={c => (this._root = c)} {...this.props} />
       </View>
@@ -42,8 +43,12 @@ Header.propTypes = {
   ...ViewPropTypes,
   style: React.PropTypes.object,
   searchBar: React.PropTypes.bool,
-  rounded: React.PropTypes.bool
+  rounded: React.PropTypes.bool,
+  translucent: React.PropTypes.bool,
 };
+Header.defaultProps = {
+  translucent: false,
+}
 
 const StyledHeader = connectStyle(
   "NativeBase.Header",
